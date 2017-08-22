@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/xuehua.css">
+	<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../js/xuehua.js"></script>
+</head>
+<body>
+<!-- 
+<div id="xh">
+	*
+</div> -->
+<!-- <div></div> -->
+<div>
+	
+<h1><font color="red"> >A heading</font></h1>
+<p><font size="5" face="arial" color="red">A paragraph.</font></p>
+
+</div>
+
+<div style="text-align:center"> 
+  <button onclick="playVid()">播放/暂停</button> 
+
+  <br> 
+
+
+<!-- <button onclick="playVid()" type="button">播放视频</button>
+<button onclick="pauseVid()" type="button">暂停视频</button>
+<br />
+<br /> -->
+
+  <video   id="video1" width="600" height="400" controls="controls" >
+<!--   <source src="../video/m.ogg" type="video/ogg" /> -->
+  <source src="../video/m.mp4" type="video/mp4" />
+<!--   <source src="../video/m.ogg" type="video/ogg" /> -->
+<!--   <source src="../video/m.webm" type="video/webm" /> -->
+<!--   <source src="../video/m.webm" type="video/webm" /> -->
+
+</video>
+</div>
+
+<script>
+var myVideo=document.getElementById("video1");
+
+function playVid()
+{ 
+  if (myVideo.paused) 
+    {myVideo.play(); }
+  else 
+  { myVideo.pause(); }
+} 
+
+</script>
+
+</body>
+</html>
